@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bon Marché Flights</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1>Bon Marché Flights</h1>
+
+        <h2>Pick from these <em>amazing</em> flights!</h2>
+        <table>
+            <tr>
+              <th>Destination</th>
+              <th>Price Per Ticket</th>
+              <th>Transportation Tax</th>
+              <th>Security Fee</th>
+            </tr>
+            <tr>
+              <td>Reykjavík, Iceland</td>
+              <td>$1750.00</td>
+              <td rowspan="2">4.5%</td>
+              <td rowspan="2">$50</td>
+            </tr>
+            <tr>
+              <td>Paris, France</td>
+              <td>$2300.00</td>
+            </tr>
+          </table>
+
+          <br>
+
+          <form>
+            <label for="dest"><strong>Pick a Destination!</strong></label> 
+            <br>
+            <br>
+            <select name="destinations" id="dest">
+                <option value="">Please Select an Option</option>
+                <option value="1750" id="iceland">Reykjavík, Iceland</option>
+                <option value="2300" id="france">Paris, France</Frame></option>
+            </select>
+            <br>
+            <br>
+            <label for="ticket">Tickets Needed:</label>
+
+            <input type="text" id="ticket" name="ticket"> 
+          </form>
+        <br>
+        <br>
+        <span id="spnError">Please only enter positive numerical values! Remember to select a destination!</span>
+          <div id="divResults">
+            <h2>Your Receipt:</h2>
+              <ul>
+                <li><strong>Ticket Cost:</strong> <span id="spnCost"></span></li>
+                <br>
+                <li><strong>Transportation Tax:</strong> <span id="spnTax"></span></li>
+                <br>
+                <li><strong>Security Fee:</strong> <span id="spnFee"></span></li>
+                <br>
+                <hr>
+                <br>
+                <li><strong>Total:</strong> <span id="spnTotal"></span></li>
+                <br>
+                <br>
+                <li id="thanks">Thank you for booking with <strong><em>Bon Marché Flights</em></strong></li>
+                <br>
+                <li><strong><em>Have a lovely flight</em></strong></li>
+                <img src="images/heart.jpg">
+              </ul>
+          </div>
+    </body>
+    <script src="js/script.js"></script>
+</html>
